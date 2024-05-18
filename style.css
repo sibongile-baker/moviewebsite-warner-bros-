@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+body {
+  background: linear-gradient(109.6deg, rgb(61, 80, 105) 11.2%, rgb(0, 34, 70) 51.2%, rgb(0, 0, 0) 98.6%);  
+  margin-right: 60px;
+  margin-left: 60px;
+  
+}
+
+.spinner {
+  display: none;
+  z-index: 6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 6px solid;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  border-color: white transparent;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+header {
+  z-index: 5;
+  background: transparent;
+  top: 0;
+  height: 5em;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #2203FF solid 2px;
+  transition: background-color 1s ease-in-out; 
+  transition: border-radius 1s ease-in-out;
+  transition: top 1s ease-in-out;
+  transition: border-bottom 2s ease-in-out;
+  transition: ease-in-out 1s;
+}
+
+header.scrolled {
+  transform: scale(0.75);
+  border-bottom: none;
+  background-color: #2003ff;
+  opacity: 0.7;
+  border-radius: 20px;
+  top: 20px;
+}
+
+
+#logo {
+  margin-left: 20px;
+  width: 50px;
+  transition: 0.1s ease-in-out;
+}
+
+#logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  color: #fff;
+  margin-left: 5px;
+  font-family: "Bebas Neue";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+
+  .nav {
+    display: flex; 
+    margin-left: 55px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #c8c8c8;
+    font-size: 23.3px;
+    letter-spacing: 0;
+    line-height: 23.3px;
+    white-space: nowrap;
+    transition: color 0.4s ease-in-out;
+  }
+
+  header.scrolled .nav {
+    color: rgb(255, 255, 255);
+    
+
+  }
+
+  .nav:hover {
+    background-image: linear-gradient(94deg, #2203FF 33.29%, #C40D60 67.01%);
+    -webkit-background-clip: text;
+  }
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #fff;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation img {
+    width: 100px;
+    margin-right: 20px;
+  }
+  
+
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.5s ease-in;
+  }
+  
+  .nav a:hover {
+    background-image: linear-gradient(94deg, #2203FF 33.29%, #C40D60 67.01%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;  
+  }
+
+
+.hero {
+  height: 600px;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px; 
+
+}
+
+.hero-copy {
+  height: 400px;
+  display: flex;  
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  margin-left: 10px; 
+}
+
+  .large-text {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    
+   
+  }
+  
+  .colored-text {
+  width: 400px;
+  margin-top: -40px;
+  background: linear-gradient(94deg, #2203FF 33.29%, #C40D60 67.01%);
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Bebas Neue", Helvetica;
+  font-weight: 400;
+  font-size: 60px;
+  z-index: 1;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  }
+
+
+  .hero-text {
+    width: 300px;
+    white-space: wrap;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    font-family: "Inter", Helvetica;
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .in-text-mod {
+    font-weight: 400;
+    background-image: linear-gradient() ;
+
+  }
+
+  .hero-btn {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #2203FF;
+    padding: 8px 16px;
+    width: 180px;
+    transition: ease-in 300ms;
+    cursor: pointer;
+    border: none;
+  
+  }
+
+  .hero-btn:hover {
+    text-decoration:aliceblue;
+    transform: scale(1.05);
+    
+   
+  }
+
+  #hero-vector {
+    position: absolute;
+    height:404px;
+    width: 736px;
+    top: 350px;
+    left: 350px;
+    object-fit: cover;
+    border-radius: 40px;
+    z-index: 1;
+  }
+
+  .movie-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #hero-image1 {
+    width: 310px; 
+    height: 467px; 
+    object-fit: cover;
+    border-radius: 40px;
+    margin-right: -50px;
+    margin-top: 50px;
+    z-index: 1;
+    transition: ease-in 300ms;
+  }
+
+  #hero-image2 {
+    width: 310px; /* Adjust width as needed */
+    height: 467px; /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 40px;
+    transition: ease-in 300ms;
+  }
+
+
+  #hero-image1:hover{
+    transform: scale(1.05);
+    cursor: pointer; 
+   
+  }
+
+  #hero-image2:hover{
+    transform: scale(1.05);
+    cursor: pointer; 
+
+  }
+
+  .Section-Title {
+    display: flex;
+    align-items: center;
+  }
+
+  #trending {
+    width: 42px;
+    height: 42px;
+  }
+
+  #trending-text {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 37.44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 15px;
+   
+  }
+
+  #spider-area {
+    display: flex;
+    flex-direction: column;
+  }
+    
+
+  #spider-man {
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 58px;
+    transition:  1s ease; 
+  }
+
+  #spider-man:hover {
+    transform: scale(1.05);
+  }
+
+  #watch-now-btn {
+    
+    margin-top: -110px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 22px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    width: 180px;
+    transition: ease-in 0.5s;
+    cursor: pointer;
+    background: transparent;
+    z-index: 2;
+
+  }
+
+  #watch-now-btn:hover {
+    text-decoration:aliceblue;
+    transform: scale(1.05);
+  }
+
+
+
+  #recommendations {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    margin-top: 110px;
+    background: linear-gradient(94deg, #2203FF 33.29%, #C40D60 67.01%);
+    -webkit-background-clip: text !important;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Bebas Neue", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 50.8px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+.movie-grid {
+  margin-top: 30px ;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+  .movie {
+    display: block;
+  
+  }
+
+  .movie-img {
+    width: 209px;
+    height: 316px;
+    transition: ease-in 300ms;
+    border-radius: 15px;
+  }
+
+  .movie-img:hover {
+    transform: scale(1.05);
+  }
+
+  .mov-title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35.309px; /* 147.119% */
+    transition: 0.5s ease-in-out;
+  }
+
+  .mov-title:hover {
+    transform: scale(1.05);
+    text-decoration: underline 1px white;
+  }
+
+
+
+  .time-year {
+    color: #F8F8F8;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.5s ease-in-out;
+  }
+
+  .time-year:hover {
+    transform: scale(1.02);
+    text-decoration: underline 1px white;
+
+  }
+
+
+    /* MOVIE PAGE */
+
+    #movie-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+
+    #spiderman-hero {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      width: 75%;
+      height: auto;
+      border-radius: 25px;
+      transition: ease-in-out 1s;
+    }
+
+    #spiderman-hero:hover {
+      transform: scale(1.05);
+    }
+
+
+
+
+    #latest-movies {
+      margin-top: -20px ;
+      margin-left: -20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      
+    }
+
+    .movie-rank-img {
+      width: cover;
+      
+      transition: ease-in 300ms;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .movie-rank-img:hover {
+      transform: translateY(-20px);
+      /* transform: scale(1.05); */
+    }
+
+
+    #must-watch  {
+
+      width: 400px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      background: linear-gradient(94deg, #2203FF 33.29%, #C40D60 67.01%);
+      -webkit-background-clip: text !important;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Bebas Neue", Helvetica;
+      font-weight: 400;
+      font-size: 60px;
+      z-index: 1;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+      }
+
+        /* TV SHOW PAGE CSS */
+
+        #wednesday-hero {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          display: flex;
+          width: 75%;
+          height: auto;
+          border-radius: 40px;
+          transition: ease-in-out 0.5s;
+        }
+
+        #wednesday-hero:hover {
+          transform: scale(1.05);
+          background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%), rgba(211, 211, 211, 0);
+        }
+
+        #cast {
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+
+        .cast-member {
+          margin: 20px 0px;
+          width: max-content;
+          padding: 10px;
+          transition: ease-in 300ms;
+          transition: transform 0.5s ease-in-out;
+        }
+
+        .cast-member:hover {
+          transform: translateY(-20px);
+        }
+
+
+        .tv-grid{
+          margin-top: 10px ;
+          display: flex;
+          justify-content: center;
+        }
+
+        .tv-show {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+        }
+
+
+        .tvshow-img {
+          
+          width: 300px;
+          transition: ease-in-out 0.5s;
+
+        }
+        .tvshow-img:hover {
+          transform: scale(1.05);
+        }
+
+        #castmember-text {
+          color: #FFF;
+          font-family: Inter;
+          font-size: 30.44px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          
+        }
+
+
+
+        .tv-shows-text {
+          color: #FFF;
+          font-family: Inter;
+          font-size: 30.44px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-left: 0px;
+        }
+
+/* Footer */
+
+
+        .footer {
+          margin-top: 40px;
+          color: #fff;
+          width: 100%;
+          background: #3586ff;
+          min-height: 10px;
+          border-radius: ;
+          background-color: #2203FF;
+          font-family: "Inter";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          z-index: 0.5;
+          background-color: #2003ff;
+          opacity: 0.98;
+          border-radius: 20px;
+        }
+
